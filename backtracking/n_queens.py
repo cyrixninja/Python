@@ -1,12 +1,13 @@
 """
 
- The nqueens problem is of placing N queens on a N * N
- chess board such that no queen can attack any other queens placed
- on that chess board.
- This means that one queen cannot have any other queen on its horizontal, vertical and
- diagonal lines.
+The nqueens problem is of placing N queens on a N * N
+chess board such that no queen can attack any other queens placed
+on that chess board.
+This means that one queen cannot have any other queen on its horizontal, vertical and
+diagonal lines.
 
 """
+
 from __future__ import annotations
 
 solution = []
@@ -24,6 +25,10 @@ def is_safe(board: list[list[int]], row: int, column: int) -> bool:
     Returns:
     Boolean Value
 
+    >>> is_safe([[0, 0, 0], [0, 0, 0], [0, 0, 0]], 1, 1)
+    True
+    >>> is_safe([[1, 0, 0], [0, 0, 0], [0, 0, 0]], 1, 1)
+    False
     """
 
     n = len(board)  # Size of the board
